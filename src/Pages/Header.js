@@ -1,7 +1,7 @@
 import React from 'react'
-import './Home.css'
+import './Global.css'
 
-const Home = () => {
+const Header = () => {
   return (
     <div className='container-global'>
       <div className='header'>
@@ -23,20 +23,9 @@ const Home = () => {
           </ul>
         </nav>
       </div>
-      <section className='section1'>
-        <h2>Soutilte</h2>
-      </section>
-      <div className='footer'>
-        <ul>
-          <li>&copy; Idées d'antan</li>
-          <li>Mentions légales</li>
-          <li>Nous joindre</li>
-        </ul>
-      </div>
-
     </div>
 
   )
 }
 
-export default Home
+export default Header
