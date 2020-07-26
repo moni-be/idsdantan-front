@@ -10,7 +10,7 @@
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   align-items: center;
   height: 12vh;
@@ -147,6 +147,8 @@
 }
 
 .footer{
+  position: fixed;
+  bottom: 0;
   display: flex;
   align-items: center;
   width: 100%;
@@ -184,7 +186,7 @@
     width: 100%;
   }
   .header .signature{
-    font-size: 1.6em;
+    font-size: 1.5em;
     width: 50%;
   }
   
@@ -244,6 +246,11 @@
     padding-left: 1em;
   }
 
+  .footer{
+    position: fixed;
+    bottom: 0;
+  }
+
   .footer ul li{
     font-size: .7em;
   }
@@ -281,6 +288,9 @@
     padding-top: 18vh;
     padding-left: 1em;
   }
-
+  .footer{
+    position: fixed;
+    bottom: 0;
+  }
 
 }
