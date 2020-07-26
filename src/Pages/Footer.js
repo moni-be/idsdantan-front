@@ -8,8 +8,8 @@ const Footer = () => {
       <div className='footer'>
         <ul>
           <li>&copy; Idées d'antan</li>
-          <li>Mentions légales</li>
-          <li>Nous joindre</li>
+          <li><a href='#'>Mentions légales</a></li>
+          <li><a href='#'>Nous joindre</a></li>
         </ul>
       </div>
     </div>

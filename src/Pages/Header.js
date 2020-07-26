@@ -13,13 +13,13 @@ const Header = () => {
           <ul>
             <li className='links-nav'>
               <a href='#'><FontAwesomeIcon icon={faPenSquare} className='icon' />
+                <br /><span className='icon-txt'>contact</span>
               </a>
-              <br /><span className='icon-txt'>contact</span>
             </li>
             <li className='links-nav'>
               <a href='#'><FontAwesomeIcon icon={faEnvelope} className='icon' />
+                <br /><span className='icon-txt'>newsletter</span>
               </a>
-              <br /><span className='icon-txt'>newsletter</span>
             </li>
           </ul>
         </nav>
