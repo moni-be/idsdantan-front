@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Global.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenSquare, faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -7,19 +8,19 @@ const Header = () => {
   return (
     <div className='container-global'>
       <div className='header'>
-        <h1 className='signature'>Idées d'antan</h1>
+        <Link to='/' className='signature'><h1 className='link'>Idées d'antan</h1></Link>
         {/* <img src='#' alt='logo' className='logo' /> */}
         <nav className='nav'>
           <ul>
             <li className='links-nav'>
-              <a href='#'><FontAwesomeIcon icon={faPenSquare} className='icon' />
-                <br /><span className='icon-txt'>contact</span>
-              </a>
+              <Link to='/'><FontAwesomeIcon icon={faPenSquare} className='icon' /></Link>
+              <br />
+              <span className='icon-txt'>contact</span>
             </li>
             <li className='links-nav'>
-              <a href='#'><FontAwesomeIcon icon={faEnvelope} className='icon' />
+              <Link to='/'><FontAwesomeIcon icon={faEnvelope} className='icon' />
                 <br /><span className='icon-txt'>newsletter</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -28,8 +29,8 @@ const Header = () => {
         <h3 className='signature'>Notre catalogue</h3>
         <nav className='nav'>
           <ul>
-            <li className='links-nav'><a href='#'>livres</a></li>
-            <li className='links-nav'><a href='#'>revues</a></li>
+            <li className='links-nav'><Link to='/Livres' className='links-nav'>livres </Link></li>
+            <li className='links-nav'><Link to='/Revues' className='links-nav'>revues </Link></li>
           </ul>
         </nav>
       </div>

@@ -31,6 +31,12 @@
   width: 50%;
   font-family: 'Cookie', cursive;
   text-align: center;
+  color: #FFFACD;
+  text-decoration: none;
+}
+
+.header .signature .link{
+  font-size: 3em;
 }
 
 .header .nav{
@@ -109,7 +115,7 @@
 
 .submenu .nav .links-nav{
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 .submenu nav ul li{
   width: 35%;
@@ -181,6 +187,10 @@
   .header .signature{
     font-size: 1.6em;
     width: 50%;
+  }
+  
+  .header .signature .link{
+    font-size: 1.5em;
   }
   
   .header .nav ul{
