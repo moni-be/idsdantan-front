@@ -2,17 +2,15 @@ import React from 'react'
 import Header from '../Header'
 import Footer from '../Footer'
 
-import '../Global.css'
-
-const Livre = () => {
+const PageProduit = () => {
   return (
     <div className='container-global'>
       <Header />
-      <h1>Livres</h1>
+      <h1>Page produit</h1>
       <Footer />
     </div>
 
   )
 }
 
-export default Livre
+export default PageProduit

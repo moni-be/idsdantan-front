@@ -1,10 +1,11 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Home from './Pages/Home/Home'
-import Livre from './Pages/LivresEtRevue/Livre'
-import Revue from './Pages/LivresEtRevue/Revue'
+import Livre from './Pages/LivresEtRevues/Livre'
+import Revue from './Pages/LivresEtRevues/Revue'
 import MentionsLegales from './Pages/PagesFooter/MentionsLegales'
 import NousJoindre from './Pages/PagesFooter/NousJoindre'
+import PageProduit from './Pages/LivresEtRevues/PageProduit'
 import './App.css'
 
 function App () {
@@ -16,6 +17,7 @@ function App () {
         <Route path='/Revues' component={Revue} />
         <Route path='/Mentions légales' component={MentionsLegales} />
         <Route path='/Nous joindre' component={NousJoindre} />
+        <Route path='/Page Produit' component={PageProduit} />
       </Switch>
     </div>
   )

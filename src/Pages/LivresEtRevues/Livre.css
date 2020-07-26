@@ -1,0 +1,59 @@
+.container-livres{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color:#FFFACD;
+}
+
+.container-livres .title{
+  position: absolute;
+  top: 25vh;
+  left: 10%;
+  display: block;
+  width: 90%;
+  font-size: 2em;
+  z-index: 1;
+}
+
+.container-livres .container-vignettes{
+  position: absolute;
+  top: 35vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+}
+
+.container-livres .container-vignettes .vignette{
+  width: 20%;
+  display: inline-block;
+  background-color:#ffffff;
+  padding: 1em;
+}
+
+.container-livres .container-vignettes .vignette{
+  box-shadow: .5px .5px 5px #070B18;
+}
+
+.container-livres .container-vignettes .vignette img{
+  display: block;
+  margin: auto;
+  width: 150px;
+  height: 200px;
+}
+
+.container-livres .container-vignettes .vignette .texte {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+.container-livres .container-vignettes .vignette .texte h3{
+  font-size: 1.5em;
+}
+
+.container-livres .container-vignettes .vignette .texte .description{
+  font-size: 1em;
+}
