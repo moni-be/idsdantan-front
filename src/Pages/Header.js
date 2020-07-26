@@ -1,5 +1,7 @@
 import React from 'react'
 import './Global.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPenSquare, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
   return (
@@ -9,8 +11,16 @@ const Header = () => {
         {/* <img src='#' alt='logo' className='logo' /> */}
         <nav className='nav'>
           <ul>
-            <li className='links-nav'><a href='#'>contact</a></li>
-            <li className='links-nav'><a href='#'>newsletter</a></li>
+            <li className='links-nav'>
+              <a href='#'><FontAwesomeIcon icon={faPenSquare} className='icon' />
+              </a>
+              <br /><span className='icon-txt'>contact</span>
+            </li>
+            <li className='links-nav'>
+              <a href='#'><FontAwesomeIcon icon={faEnvelope} className='icon' />
+              </a>
+              <br /><span className='icon-txt'>newsletter</span>
+            </li>
           </ul>
         </nav>
       </div>
