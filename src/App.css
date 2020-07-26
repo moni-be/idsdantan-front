@@ -1,5 +1,18 @@
-*, h1,h2,h3,p,span{ padding: 0; margin: 0;}
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@font-face{
+  font-family: 'Saldina', serif;
+  src: url('./Assets/Saldina.ttf');
+}
 
 html{ box-sizing: border-box;}
 
-body{color: #070B18;}
+*, h1,h2,h3,p, div,ul,li,div,nav,img{ padding: 0; margin: 0}
+h1{font-weight: 600;font-size: 2.5em;}
+h2,h3{font-weight: 600;font-size: 2em;}
+
+body{font-family: 'Montserrat', sans-serif; 
+  font-weight: 400;
+  font-size: 16px;
+  color: #070B18;}
