@@ -1,11 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@300;400;500;600;700&display=swap');
 
-@font-face{
-  font-family: 'Saldina', serif;
-  src: url('./Assets/Saldina.ttf');
-}
-
 html{ box-sizing: border-box;}
 
 *, h1,h2,h3,p, div,ul,li,div,nav,img{ padding: 0; margin: 0}
@@ -18,3 +13,5 @@ body{font-family: 'Montserrat', sans-serif;
   color: #070B18;}
 
 Link{text-decoration: none;}
+
+a{text-decoration: none; font-size: .8em;}

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './Global.css'
+import './GlobalDantan.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenSquare, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 

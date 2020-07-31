@@ -1,18 +1,22 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import ModelCard from './ModelCard'
+import ModelBook from './ModelBook.js'
 import Header from '../Header'
 import Footer from '../Footer'
 
-import '../Global.css'
+import '../GlobalDantan.css'
 import './Livre.css'
 
 const Livre = () => {
-  const [livres, setLivres] = useState([])
+  const [book, setBook] = useState([])
 
-  const fetchLivre = (livreId = 1) => {
-    axios.get(`http://localhost:4000/livres/${livreId}`)
-      .then(res => setLivres(res.data))
+  useEffect(() => {
+    showAllBooks()
+  }, [])
+
+  const showAllBooks = () => {
+    axios.get(`http://localhost:4000/livres/${book}`)
+      .then(res => setBook(res.data))
   }
 
   return (
@@ -21,39 +25,9 @@ const Livre = () => {
       <div className='container-livres'>
         <h1 className='title'>Livres</h1>
         <div className='container-vignettes'>
-          {livres.map((livre, key) => {
-            return <ModelCard  isLivre={0} livre={livre} key={key} />
+          {book.map((book, key) => {
+            return <ModelBook isBook={0} book={book} key={key} />
           })}
-          {/* <figure className='vignette'>
-              <Link to='/Page Produit'>
-                  <img src='#' />
-                </Link>
-              <figcaption className='texte'>
-                <h3>{livre.title}</h3>
-                <p className='description'>description</p>
-              </figcaption>
-            </figure>
-            <figure className='vignette'>
-            <img src='#' />
-            <figcaption>
-              <h3>Title</h3>
-              <p>description</p>
-            </figcaption>
-          </figure>
-          <figure className='vignette'>
-            <img src='#' />
-            <figcaption>
-              <h3>Title</h3>
-              <p>description</p>
-            </figcaption>
-          </figure>
-          <figure className='vignette'>
-            <img src='#' />
-            <figcaption>
-              <h3>Title</h3>
-              <p>description</p>
-            </figcaption>
-          </figure> */}
         </div>
       </div>
       <Footer />

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Global.css'
+import '../GlobalDantan.css'
 
 const Banner = () => {
   return (

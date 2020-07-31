@@ -16,7 +16,7 @@
   height: 10vh;
   flex-direction: row;
   width: 100%;
-  background-color:#4C73F1;
+  background-color:#1c2833;
   color: #FFFACD;
 }
 
@@ -110,7 +110,7 @@
 }
 
 .submenu nav ul li a:hover{
-  color: #4C73F1;
+  color: #1c2833;
 }
 
 .section1{

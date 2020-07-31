@@ -21,6 +21,7 @@
   top: 35vh;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
   height: auto;
@@ -29,7 +30,7 @@
 }
 
 .container-livres .container-vignettes .vignette{
-  width: 20%;
+  width: 30%;
   display: inline-block;
   background-color:rgba(255, 255, 255, .5);
   margin-bottom: 2em;
@@ -43,11 +44,11 @@
   box-shadow: .5px .5px 5px rgba(7,11,24,.6)
 }
 
-.container-livres .container-vignettes .vignette img{
+.container-livres .container-vignettes .vignette .photo{
   display: block;
   margin: auto;
-  width: 150px;
-  height: 200px;
+  width: 260px;
+  height: 400px;
 }
 
 .container-livres .container-vignettes .vignette .texte {
@@ -56,11 +57,16 @@
   margin: auto;
 }
 .container-livres .container-vignettes .vignette .texte h3{
-  font-size: 1.5em;
+  font-size: .85em;
+  font-weight: 400;
+}
+.container-livres .container-vignettes .vignette .texte h4,h5{
+  font-size: .7em;
+
 }
 
 .container-livres .container-vignettes .vignette .texte .description{
-  font-size: 1em;
+  font-size: .8em;
 }
 
 @media screen and (min-width: 200px) and (max-width: 640px) {
@@ -83,14 +89,17 @@
   }
 
   .container-livres .container-vignettes .vignette{
-    width: 35%;
+    width: 85%;
+    height: auto;
   }
 
-  .container-livres .container-vignettes .vignette img{
-    display: block;
-    margin: auto;
-    width: 100px;
-    height: 150px;
+  .container-livres .container-vignettes .vignette .texte h3{
+    visibility: hidden;
+  }
+
+  .container-livres .container-vignettes .vignette .photo{
+    width: 100%;
+    height: 100%;
   }
 
 }
@@ -103,13 +112,17 @@
   }
 
   .container-livres .container-vignettes{
+    width: 100%;
     top: 40vh;
     height: auto;
-
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   .container-livres .container-vignettes .vignette{
-    width: 50%;
+    width: 40%;
     height: auto;
+    margin: .5em;
   }
 
   
