@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import image from '../../Assets/revues/lnrf-99.png'
 
-import './Livre.css'
+import './Livre&Revue.css'
 
 const ModelRevue = (props) => {
   const { revue } = props
@@ -10,7 +10,7 @@ const ModelRevue = (props) => {
     return (
       <>
         <figure className='vignette'>
-          <Link to='/Page Produit'>
+          <Link to='/ma-revue'>
             <img src={image} className='photo' alt={revue.title} />
           </Link>
           <figcaption className='texte'>

@@ -6,7 +6,7 @@ const PageProduit = () => {
   return (
     <div className='container-global'>
       <Header />
-      <h1>Page produit</h1>
+      <h1>Page d'une revue</h1>
       <Footer />
     </div>
 

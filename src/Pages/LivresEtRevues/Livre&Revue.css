@@ -57,12 +57,13 @@
   margin: auto;
 }
 .container-livres .container-vignettes .vignette .texte h3{
-  font-size: .85em;
+  font-size: 1em;
   font-weight: 400;
 }
-.container-livres .container-vignettes .vignette .texte h4,h5{
-  font-size: .7em;
 
+.container-livres .container-vignettes .vignette .texte h4,h5{
+  font-size: 1em;
+  padding-bottom: 1em;
 }
 
 .container-livres .container-vignettes .vignette .texte .description{
@@ -97,9 +98,13 @@
     visibility: hidden;
   }
 
+  .container-livres .container-vignettes .vignette .texte h4,h5{
+    font-size: .9em;
+  }
+
   .container-livres .container-vignettes .vignette .photo{
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
   }
 
 }
@@ -107,13 +112,13 @@
 @media screen and (min-width: 640px) and (max-width: 1200px) {
   .container-livres .title{
     position: absolute;
-    top: 30vh;
+    top: 37vh;
     font-size: 1.5em;
   }
 
   .container-livres .container-vignettes{
     width: 100%;
-    top: 40vh;
+    top: 45vh;
     height: auto;
     flex-direction: row;
     flex-wrap: wrap;

@@ -5,7 +5,8 @@ import Livre from './Pages/LivresEtRevues/Livre'
 import Revue from './Pages/LivresEtRevues/Revue'
 import MentionsLegales from './Pages/PagesFooter/MentionsLegales'
 import NousJoindre from './Pages/PagesFooter/NousJoindre'
-import PageProduit from './Pages/LivresEtRevues/PageProduit'
+import PageProdBook from './Pages/LivresEtRevues/PageProdBook'
+import PageProdRevue from './Pages/LivresEtRevues/PageProdRevue'
 import './App.css'
 
 function App () {
@@ -17,7 +18,8 @@ function App () {
         <Route path='/Revues' component={Revue} />
         <Route path='/Mentions légales' component={MentionsLegales} />
         <Route path='/Nous joindre' component={NousJoindre} />
-        <Route path='/Page Produit' component={PageProduit} />
+        <Route path='/mon-livre' component={PageProdBook} />
+        <Route path='/ma-revue' component={PageProdRevue} />
       </Switch>
     </div>
   )

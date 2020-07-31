@@ -5,7 +5,7 @@ import Header from '../Header'
 import Footer from '../Footer'
 
 import '../GlobalDantan.css'
-import './Livre.css'
+import './Livre&Revue.css'
 
 const Revue = () => {
   const [revue, setRevue] = useState([])
