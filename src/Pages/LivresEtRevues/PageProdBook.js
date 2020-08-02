@@ -16,7 +16,7 @@ const PageBook = (props) => {
 
   const showOneProduct = () => {
     axios.get(`http://localhost:4000/mon-livre/id/${product}`)
-      .then(res => console.log(product) && setProduct(res.data))
+      .then(res => console.log(res) && setProduct(res.data))
   }
 
   return (
