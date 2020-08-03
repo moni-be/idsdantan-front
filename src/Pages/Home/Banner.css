@@ -1,0 +1,10 @@
+.banner{
+  width: 100vw;
+  margin: auto;
+  height: auto;
+  position: absolute;
+  top: 30vh;
+  text-align: center;
+  display: flex;
+  justify-content: start;
+}

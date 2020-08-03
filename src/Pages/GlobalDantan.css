@@ -132,6 +132,7 @@
 .section1{
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   width: 100%;
   height: 80vh;
 }
@@ -143,6 +144,14 @@
   padding-top: 15vh;
   padding-left: 2em;
   color: #1C2833;
+}
+
+.section1 .evenement{
+  z-index: 1;
+  font-size: 2em;
+  padding: 1em;
+  top: 25vh;
+  color: #ffffff;
 }
 
 .footer{
