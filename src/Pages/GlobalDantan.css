@@ -185,6 +185,10 @@
 
 
 @media screen and (min-width: 200px) and (max-width: 640px) {
+  .container-produit{
+    flex-direction: row;
+  }
+
   .header {
     display: flex;
     flex-direction: row;
@@ -284,6 +288,7 @@
 
   .submenu h3{
     font-size: 1.5em;
+    margin-top: 1em;
   }
   .submenu .nav .links-nav{
     font-size: 1em;
