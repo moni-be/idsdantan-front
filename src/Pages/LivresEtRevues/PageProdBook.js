@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Header from '../Header'
 import Footer from '../Footer'
-import ModelProduct from './ModelProduct'
+// import ModelProduct from './ModelProduct'
+import image from '../../Assets/books/comment-je-vois-le-monde.png'
 
 import '../GlobalDantan.css'
-import './PageProd.css'
+import './ModelProd.css'
 
 const PageBook = (props) => {
   const [product, setProduct] = useState([])
@@ -23,9 +24,18 @@ const PageBook = (props) => {
     <div className='container-global'>
       <Header />
       <div className='container-produit'>
-        {product.map((product, key) => {
-          return <ModelProduct isProduct={0} product={product} key={key} />
-        })}
+        <div className='fiche-prod'>
+          <img src={image} className='photo' alt='#' />
+        </div>
+        <div className='infos-prod'>
+          <h3>{product.title}Titre</h3>
+          <ul>
+            <li>{product.autor}Auteur</li>
+            <li>{product.price}Prix</li>
+            <li>{product.category_name}Description</li>
+          </ul>
+          <p className='description'>{product.description}</p>
+        </div>
       </div>
       <Footer />
     </div>

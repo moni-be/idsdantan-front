@@ -1,0 +1,38 @@
+.container-produit{
+  width: 100%;
+  margin-top: 12vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ .container-produit .fiche-prod{
+  width: 50%;
+  height: auto;
+  display: block;
+  display: flex;
+  justify-content: end;
+}
+
+.container-produit .infos-prod{
+  width: 50%;
+  height: auto;
+  display: block;
+  flex-direction: column;
+  margin-top: 50vh;
+}
+
+.container-produit .fiche-prod .photo{
+  display: block;
+  width: 50%;
+}
+
+.container-produit .infos-prod h3{
+  display: block;
+  font-size: 2em;
+}
+
+.container-produit .infos-prod ul li{
+
+ text-decoration: none;
+ list-style: none;
+}
