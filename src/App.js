@@ -14,10 +14,10 @@ function App () {
     <div>
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route path='/Livres' component={Livre} />
-        <Route path='/Revues' component={Revue} />
-        <Route path='/Mentions légales' component={MentionsLegales} />
-        <Route path='/Nous joindre' component={NousJoindre} />
+        <Route path='/Livre' component={Livre} />
+        <Route path='/Revue' component={Revue} />
+        <Route path='/mentions-legales' component={MentionsLegales} />
+        <Route path='/nous-joindre' component={NousJoindre} />
         <Route path='/mon-livre' component={PageProdBook} />
         <Route path='/ma-revue' component={PageProdRevue} />
       </Switch>
