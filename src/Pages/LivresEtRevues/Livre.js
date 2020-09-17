@@ -15,7 +15,7 @@ const Livre = () => {
   }, [])
 
   const showAllBooks = () => {
-    axios.get(`http://localhost:4000/livres/${book}`)
+    axios.get(`http://localhost:4000/livre/${book}`)
       .then(res => setBook(res.data))
   }
 

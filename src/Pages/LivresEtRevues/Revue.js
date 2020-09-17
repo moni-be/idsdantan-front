@@ -15,7 +15,7 @@ const Revue = () => {
   }, [])
 
   const showAllRevues = () => {
-    axios.get(`http://localhost:4000/revues/${revue}`)
+    axios.get(`http://localhost:4000/revue/${revue}`)
       .then(res => setRevue(res.data))
   }
 
