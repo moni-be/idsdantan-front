@@ -18,8 +18,8 @@ function App () {
         <Route path='/revue' component={Revue} />
         <Route path='/mentions-legales' component={MentionsLegales} />
         <Route path='/nous-joindre' component={NousJoindre} />
-        <Route path='/mon-livre' component={PageProdBook} />
-        <Route path='/ma-revue' component={PageProdRevue} />
+        <Route path='/mon-livre/:bookId' component={PageProdBook} />
+        <Route path='/ma-revue/:revueId' component={PageProdRevue} />
       </Switch>
     </div>
   )

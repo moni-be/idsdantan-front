@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../../Assets/books/comment-je-vois-le-monde.png'
+import image from '../../../public/assets/books/comment-je-vois-le-monde.png'
 
 import './ModelProd.css'
 

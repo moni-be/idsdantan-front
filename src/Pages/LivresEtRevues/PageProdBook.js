@@ -1,23 +1,22 @@
 import React, { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import Header from '../Header'
 import Footer from '../Footer'
-// import ModelProduct from './ModelProduct'
-import image from '../../Assets/books/comment-je-vois-le-monde.png'
-
 import '../GlobalDantan.css'
 import './ModelProd.css'
 
-const PageBook = (props) => {
+const PageProdBook = (props) => {
+  const { bookId } = useParams
   const [product, setProduct] = useState([])
 
   useEffect(() => {
     showOneProduct()
-  })
+  }, [])
 
   const showOneProduct = () => {
-    axios.get(`http://localhost:4000/mon-livre/id/${product}`)
-      .then(res => console.log(res) && setProduct(res.data))
+    axios.get(`http://localhost:4000/mon-livre/${bookId}`)
+      .then(res => setProduct(res.data))
   }
 
   return (
@@ -25,7 +24,7 @@ const PageBook = (props) => {
       <Header />
       <div className='container-produit'>
         <div className='fiche-prod'>
-          <img src={image} className='photo' alt='#' />
+          <img src={product.image_name} className='photo' alt='#' />
         </div>
         <div className='infos-prod'>
           <h3>{product.title}Titre</h3>
@@ -43,4 +42,4 @@ const PageBook = (props) => {
   )
 }
 
-export default PageBook
+export default PageProdBook

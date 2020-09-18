@@ -1,29 +1,29 @@
 import React, { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import Header from '../Header'
 import Footer from '../Footer'
-import image from '../../Assets/revues/critique-236.png'
-
 import '../GlobalDantan.css'
 import './ModelProd.css'
 
-const PageRevue = (props) => {
+const PageProdRevue = (props) => {
+  const { revueId } = useParams
   const [product, setProduct] = useState([])
 
   useEffect(() => {
     showOneProduct()
-  })
+  }, [])
 
   const showOneProduct = () => {
-    axios.get(`http://localhost:4000/ma-revue/id/${product}`)
-      .then(res => console.log(res) && setProduct(res.data))
+    axios.get(`http://localhost:4000/ma-revue/${revueId}`)
+      .then(res => console.log(res) || setProduct(res.data))
   }
   return (
     <div className='container-global'>
       <Header />
       <div className='container-produit'>
         <div className='fiche-prod'>
-          <img src={image} className='photo-revue' alt='#' />
+          <img src={product.image} className='photo-revue' alt='#' />
         </div>
         <div className='infos-prod'>
           <h3>{product.title}Titre</h3>
@@ -41,4 +41,4 @@ const PageRevue = (props) => {
   )
 }
 
-export default PageRevue
+export default PageProdRevue

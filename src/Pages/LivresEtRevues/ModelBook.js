@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import image from '../../Assets/books/comment-je-vois-le-monde.png'
+// import image from '../../../public/assets/books/comment-je-vois-le-monde.png'
 
 import './Livre&Revue.css'
 
@@ -10,10 +10,8 @@ const ModelBook = (props) => {
     return (
       <>
         <figure className='vignette'>
-          <Link to='/mon-livre'>
-            {/* <img src={image && `./Assets/books/${book.image_name}`  */}
-            <img src={image} className='photo' alt={book.title} />
-            {console.log(image)}
+          <Link to={`/mon-livre/${book.id}`}>
+            <img src={`../../../public/assets/books/${book.image_name}`} className='photo' alt={book.title} />
           </Link>
           <figcaption className='texte'>
             <h3>{book.title}</h3>
