@@ -12,17 +12,18 @@
   left: 10%;
   display: block;
   width: 90%;
-  font-size: 2em;
+  font-size: 1.5em;
   z-index: 1;
+  padding: 0;
 }
 
 .container-livres .container-vignettes{
   position: absolute;
-  top: 35vh;
+  top: 33vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   height: auto;
   background-color:#FFFACD;
@@ -30,10 +31,10 @@
 }
 
 .container-livres .container-vignettes .vignette{
-  width: 30%;
+  width: 23%;
   display: inline-block;
   background-color:rgba(255, 255, 255, .5);
-  margin-bottom: 2em;
+  margin: .8em;
 }
 
 .container-livres .container-vignettes .vignette{

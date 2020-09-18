@@ -14,7 +14,7 @@ const ModelRevue = (props) => {
           </Link>
           <figcaption className='texte'>
             <h3>{revue.title} - {revue.number}</h3>
-            <h5>{revue.price}€</h5>
+            <h5>{revue.price}&euro;</h5>
           </figcaption>
         </figure>
       </>

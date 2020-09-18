@@ -30,10 +30,10 @@ const PageProdBook = (props) => {
           <h3>{product.title}</h3>
           <ul>
             <li>{product.autor}</li>
-            <li>{product.price}</li>
             <li>{product.category}</li>
+            <p className='description'>{product.description}</p>
+            <li className='price'>{product.price}&euro;</li>
           </ul>
-          <p className='description'>{product.description}</p>
         </div>
       </div>
       <Footer />

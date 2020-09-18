@@ -15,7 +15,7 @@ const ModelBook = (props) => {
           <figcaption className='texte'>
             <h3>{book.title}</h3>
             <h4>{book.author}</h4>
-            <h5>{book.price}€</h5>
+            <h5>{book.price}&euro;</h5>
             {/* <p className='description'>{book.description}</p> */}
           </figcaption>
         </figure>

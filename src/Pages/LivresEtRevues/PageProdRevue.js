@@ -28,11 +28,11 @@ const PageProdRevue = (props) => {
         <div className='infos-prod'>
           <h3>{product.title}</h3>
           <ul>
-            <li>{product.number}</li>
-            <li>{product.price}</li>
+            <li>Numéro : {product.number}</li>
             <li>{product.category_name}</li>
+            <p className='description'>{product.description}</p>
+            <li className='price'>{product.price}&euro;</li>
           </ul>
-          <p className='description'>{product.description}</p>
         </div>
       </div>
       <Footer />
