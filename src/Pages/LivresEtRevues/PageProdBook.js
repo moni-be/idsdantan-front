@@ -7,7 +7,7 @@ import '../GlobalDantan.css'
 import './ModelProd.css'
 
 const PageProdBook = (props) => {
-  const { bookId } = useParams
+  const { bookId } = useParams()
   const [product, setProduct] = useState([])
 
   useEffect(() => {
@@ -24,14 +24,14 @@ const PageProdBook = (props) => {
       <Header />
       <div className='container-produit'>
         <div className='fiche-prod'>
-          <img src={`/assets/books/${product.image_name}`} className='photo' alt='#' />
+          <img src={`/assets/books/${product.image_name}`} className='photo' alt={`${product.image_name}`} />
         </div>
         <div className='infos-prod'>
-          <h3>{product.title}Titre</h3>
+          <h3>{product.title}</h3>
           <ul>
-            <li>{product.autor}Auteur</li>
-            <li>{product.price}Prix</li>
-            <li>{product.category_name}Description</li>
+            <li>{product.autor}</li>
+            <li>{product.price}</li>
+            <li>{product.category_name}</li>
           </ul>
           <p className='description'>{product.description}</p>
         </div>

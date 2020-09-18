@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import image from '../../../public/assets/revues/lnrf-99.png'
 
 import './Livre&Revue.css'
 

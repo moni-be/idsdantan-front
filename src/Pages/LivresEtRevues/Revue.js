@@ -23,7 +23,7 @@ const Revue = () => {
     <div className='container-global'>
       <Header />
       <div className='container-livres'>
-        <h1 className='title'>Livres</h1>
+        <h1 className='title'>Revues</h1>
         <div className='container-vignettes'>
           {revue.map((revue, key) => {
             return <ModelRevue isRevue={0} revue={revue} key={key} />
