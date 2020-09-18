@@ -26,11 +26,11 @@ const PageProdRevue = (props) => {
           <img src={`/assets/revues/${product.image_name}`} className='photo-revue' alt={`${product.title}`} />
         </div>
         <div className='infos-prod'>
-          <h3>{product.title}Titre</h3>
+          <h3>{product.title}</h3>
           <ul>
-            <li>{product.number}Number</li>
-            <li>{product.price}Prix</li>
-            <li>{product.category_name}Description</li>
+            <li>{product.number}</li>
+            <li>{product.price}</li>
+            <li>{product.category_name}</li>
           </ul>
           <p className='description'>{product.description}</p>
         </div>

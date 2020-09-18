@@ -29,8 +29,8 @@ const Header = () => {
         <h3 className='signature'>Notre catalogue</h3>
         <nav className='nav'>
           <ul>
-            <li className='links-nav'><Link to='/Livre' className='links-nav'>livres </Link></li>
-            <li className='links-nav'><Link to='/Revue' className='links-nav'>revues </Link></li>
+            <li className='links-nav'><Link to='/livre' className='links-nav'>livres </Link></li>
+            <li className='links-nav'><Link to='/revue' className='links-nav'>revues </Link></li>
           </ul>
         </nav>
       </div>
