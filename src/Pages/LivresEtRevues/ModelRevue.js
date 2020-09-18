@@ -13,8 +13,9 @@ const ModelRevue = (props) => {
             <img src={`/assets/revues/${revue.image_name}`} className='photo' alt={revue.title} />
           </Link>
           <figcaption className='texte'>
-            <h3>{revue.title} - {revue.number}</h3>
-            <h5>{revue.price}&euro;</h5>
+            <h3>{revue.title} </h3>
+            <h4>Numéro : {revue.number}</h4>
+            <h5>Prix : {revue.price}&euro;</h5>
           </figcaption>
         </figure>
       </>

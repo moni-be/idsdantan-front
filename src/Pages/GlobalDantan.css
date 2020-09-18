@@ -79,12 +79,12 @@
 }
 .submenu{
   position: absolute;
+  width: 100%;
   top: 12vh;
-  z-index: 1;
   display: flex;
   flex-direction: row;
-  width: 100%;
   padding-top: 1em;
+  z-index: 1;
   padding-bottom: 1em;
   background-color:#ff4500;
   color: #FFFACD;
@@ -234,7 +234,8 @@
   .submenu h3{
     position: absolute;
     top: .2em;
-    font-size: 1em;
+    font-size: 1.2em;
+    color: #1C2833;;
   }
 
   .submenu nav{
@@ -245,7 +246,7 @@
   }
   .submenu .nav .links-nav{
     display: inline;
-    padding-left: 1.5em;
+    padding-left: .8em;
     font-weight: 700;
     font-size: 1em;
   }

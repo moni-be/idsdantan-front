@@ -58,14 +58,24 @@
   margin: auto;
 }
 .container-livres .container-vignettes .vignette .texte h3{
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 400;
+  margin-bottom: .3em;
+  font-style: italic;
 }
 
-.container-livres .container-vignettes .vignette .texte h4,h5{
-  font-size: 1em;
+.container-livres .container-vignettes .vignette .texte h4{
+  font-size: .8em;
+  font-weight: 400;
   padding-bottom: 1em;
 }
+
+.container-livres .container-vignettes .vignette .texte h5{
+  font-size: 1.1em;
+  font-weight: 600;
+  padding-bottom: 1em;
+}
+
 
 .container-livres .container-vignettes .vignette .texte .description{
   font-size: .8em;
@@ -77,15 +87,15 @@
     position: absolute;
     left: 10%;
     top: 18vh;
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   
   .container-livres .container-vignettes{
     position: absolute;
     top: 23vh;
-    height: auto;
     display: flex;
     width: 100%;
+    margin: auto;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -96,7 +106,7 @@
   }
 
   .container-livres .container-vignettes .vignette .texte h3{
-    visibility: hidden;
+    display: none;
   }
 
   .container-livres .container-vignettes .vignette .texte h4,h5{
