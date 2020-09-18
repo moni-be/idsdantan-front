@@ -24,7 +24,7 @@ const PageProdBook = (props) => {
       <Header />
       <div className='container-produit'>
         <div className='fiche-prod'>
-          <img src={product.image_name} className='photo' alt='#' />
+          <img src={`/assets/books/${product.image_name}`} className='photo' alt='#' />
         </div>
         <div className='infos-prod'>
           <h3>{product.title}Titre</h3>

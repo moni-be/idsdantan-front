@@ -11,7 +11,7 @@ const ModelRevue = (props) => {
       <>
         <figure className='vignette'>
           <Link to={`/ma-revue/${revue.id}`}>
-            <img src={`../../../public/assets/revues/${revue.image_name}image`} className='photo' alt={revue.title} />
+            <img src={`/assets/revues/${revue.image_name}`} className='photo' alt={revue.title} />
           </Link>
           <figcaption className='texte'>
             <h3>{revue.title} - {revue.number}</h3>

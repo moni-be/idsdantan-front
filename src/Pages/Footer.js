@@ -9,8 +9,8 @@ const Footer = () => {
       <div className='footer'>
         <ul>
           <li>&copy; Idées d'antan</li>
-          <li><Link to='/Mentions légales'>Mentions légales</Link></li>
-          <li><Link to='Nous joindre'>Nous joindre</Link></li>
+          <li><Link to='/mentions-legales'>Mentions légales</Link></li>
+          <li><Link to='nous-joindre'>Nous joindre</Link></li>
         </ul>
       </div>
     </div>

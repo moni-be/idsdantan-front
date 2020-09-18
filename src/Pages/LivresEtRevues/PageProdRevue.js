@@ -23,7 +23,7 @@ const PageProdRevue = (props) => {
       <Header />
       <div className='container-produit'>
         <div className='fiche-prod'>
-          <img src={product.image} className='photo-revue' alt='#' />
+          <img src={`/assets/revues/${product.image}`} className='photo-revue' alt='#' />
         </div>
         <div className='infos-prod'>
           <h3>{product.title}Titre</h3>
