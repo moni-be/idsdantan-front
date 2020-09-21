@@ -1,9 +1,9 @@
 .container-produit{
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 .container-produit .fiche-prod{
@@ -46,6 +46,7 @@
   margin-top: 1em;
   font-size: 2em;
  }
+
  .container-produit .infos-prod .description{
   margin-top: 1em;
   font-size: 1em;
@@ -54,51 +55,90 @@
 
 
 @media screen and (min-width: 200px) and (max-width: 640px) {
-  .container-produit .fiche-prod{
-    justify-content: flex-start;
+  .container-produit {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
   }
+
+  .container-produit .fiche-prod{
+    width: 50%;
+    margin-top: 0em;
+  }
+  
   .container-produit .infos-prod{
-    margin-bottom: 3em;
+    width: 50%;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
   }
 
   .container-produit .fiche-prod .photo{
-    display: block;
     width: 100%;
-    margin-top: .5em;
+    height: auto;
   }
 
   .container-produit .fiche-prod .photo-revue{
     width: 100%;
-    margin-top: .5em;
   }
 
   .container-produit .infos-prod h3{
-    display: block;
-    font-size: 1.5em;
-    margin-bottom: 3em;
+    font-size: 1em;
+  }
+
+  .container-produit .infos-prod .description{
+    margin-top: .5em;
+    font-size: .8em;
+    font-style: italic;
+   }
+
+  .container-produit .infos-prod .price{
+    font-weight: 700;
+    font-size: 1.2em;
   }
 }
 
 @media screen and (min-width: 640px) and (max-width: 1200px) {
-  .container-produit{
-    height: 120vh;
-    margin-top: 1.5em;
+  .container-produit {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
   }
+ 
   .container-produit .fiche-prod{
-    padding-left: .5em;
-    justify-content: end;
+    width: 50%;
   }
+  
+  .container-produit .infos-prod{
+    width: 40%;
+    margin-bottom: 1em;
+  }
+
   .container-produit .fiche-prod .photo{
     display: block;
-    width: 45%;
+    width: 40%;
   }
 
   .container-produit .fiche-prod .photo-revue{
-    width: 50%;
-    padding: 1%;
+    width: 40%;
+    padding-right: 1em;
   }
 
-  .container-produit .infos-prod{
-    margin-bottom: 3em;
+  .container-produit .infos-prod h3{
+    font-size: 1em;
+  }
+
+  .container-produit .infos-prod .description{
+    margin-top: .5em;
+    font-size: .9em;
+    font-style: italic;
+   }
+
+  .container-produit .infos-prod .price{
+    margin-top: 1em;
+    font-size: 1em;
+    font-weight: 600;
   }
 }
