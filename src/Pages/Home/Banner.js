@@ -9,7 +9,7 @@ const Banner = () => {
   return (
     <div className='container-global'>
       <section className='section1'>
-        <h2 className='subtitle'>Les évènements des livres !</h2>
+        <h2 className='subtitle'>Les évènements <br />des livres !</h2>
         <h2 className='evenement'>La Nuit du Livre</h2>
         <div className='banner'>
           <Video />

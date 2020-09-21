@@ -28,7 +28,7 @@ const PageProdRevue = (props) => {
         <div className='infos-prod'>
           <h3>{product.title}</h3>
           <ul>
-            <li>Numéro : {product.number}</li>
+            {/* <li>Numéro : {product.number}</li> */}
             <li>{product.category_name}</li>
             <p className='description'>{product.description}</p>
             <li className='price'>{product.price}&euro;</li>

@@ -75,7 +75,7 @@
 }
 
 .header .nav ul li a:hover{
-  color: #070B18;
+  color: #ff4500;
 }
 .submenu{
   position: absolute;
@@ -90,7 +90,7 @@
   color: #FFFACD;
 }
 
-.submenu h3{
+.submenu .signature{
   display: block;
   width: 35%;
   text-align: center;
@@ -139,19 +139,23 @@
 
 .section1 .subtitle{
   font-family: 'Cookie', cursive;
-  font-size: 2em;
+  font-size: 2.6em;
   font-weight: lighter;
-  padding-top: 15vh;
-  padding-left: 2em;
-  color: #1C2833;
+  padding: 3em 0em 0em 1.8em;
+  color: #ffffff;
+  transform: rotate(-8deg);
+  z-index: 2;
+  text-align: center;
+  line-height: .8;
+  text-shadow: 0 0 2px #ff4500, 0 0 8px #000;
 }
 
 .section1 .evenement{
   z-index: 1;
   font-size: 2em;
-  padding: 1em;
-  top: 25vh;
+  padding: 1.5em 0em 0em 2em;
   color: #ffffff;
+  text-shadow: 0 0 1px #ff4500, 0 0 5px #000;
 }
 
 .footer{
@@ -161,8 +165,10 @@
   align-items: center;
   width: 100%;
   height: 8vh;
-  background-color:rgba(28,40,51,.4);
+  background-color:rgba(255,255,255,.6);
   text-align: center;
+  padding-bottom: 1em;
+  border-top: solid .5px #1C2833;
 }
 
 .footer ul{
@@ -177,6 +183,7 @@
 .footer ul li a{
   text-decoration: none;
   color: #070B18;
+  font-size: 1em;
 }
 
 .footer ul li a:hover{
@@ -196,7 +203,7 @@
     width: 100%;
   }
   .header .signature{
-    font-size: 1.5em;
+    font-size: 1.3em;
     width: 50%;
   }
   
@@ -230,17 +237,18 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-top: 1.5em;
   }
-  .submenu h3{
+  .submenu .signature{
     position: absolute;
-    top: .2em;
     font-size: 1.2em;
     color: #1C2833;;
   }
 
-  .submenu nav{
+  .submenu .nav{
     position: absolute;
-    right: 1em;
+    top: 1em;
+    right: 0;
     display: flex;
     flex-direction: row;
   }
@@ -252,14 +260,18 @@
   }
 
   .section1 .subtitle{
-    font-size: 2em;
-    padding-top: 10vh;
-    padding-left: 1em;
+    font-size: 1.4em;
+    padding: 2.8em 0em 0em .5em;
   }
 
+  .section1 .evenement{
+    display: none;
+  }
   .footer{
     position: fixed;
     bottom: 0;
+    background-color: #ffffff;
+    font-size: 1em;
   }
 
   .footer ul li{
@@ -273,13 +285,14 @@
   .header{
     height: 16vh;
   }
-
+  
   .header .nav .links-nav .icon{
     font-size: 1.3em;
   }
   .header .nav .links-nav .icon-txt{
     font-size: .7em;
   }
+  
   .submenu {
     display: flex;
     flex-direction: row;
@@ -287,21 +300,30 @@
     padding-top: 1.5em;
   }
 
-  .submenu h3{
-    font-size: 1.5em;
+  .submenu .signature{
+    font-size: 1.6em;
   }
+
   .submenu .nav .links-nav{
     font-size: 1em;
+    top: 1em;
   }
- 
+
   .section1 .subtitle{
-    font-size: 2em;
-    padding-top: 18vh;
-    padding-left: 1em;
+    font-size: 1.5em;
+    padding: 3.4em 0em 0em 1em;
   }
+
+  .section1 .evenement{
+    font-size: 1em;
+    padding: 1.5em 0em 0em 2em;
+  }
+
   .footer{
     position: fixed;
     bottom: 0;
+    padding:.5em 0em;
+    font-size: 1em;
   }
 
 }

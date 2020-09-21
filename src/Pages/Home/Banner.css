@@ -3,8 +3,23 @@
   margin: auto;
   height: auto;
   position: absolute;
-  top: 30vh;
+  top: 24vh;
   text-align: center;
   display: flex;
   justify-content: start;
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+  .banner{
+    top: 22vh;
+  }
+}
+
+
+  @media screen and (min-width: 640px) and (max-width: 1200px) {
+  .banner{
+    top: 32vh;
+  }
+
 }
