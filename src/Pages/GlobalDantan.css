@@ -141,13 +141,13 @@
   font-family: 'Cookie', cursive;
   font-size: 2.6em;
   font-weight: lighter;
-  padding: 3em 0em 0em 1.8em;
+  padding: 2.8em 0em 0em 1em;
   color: #ffffff;
   transform: rotate(-8deg);
   z-index: 2;
   text-align: center;
   line-height: .8;
-  text-shadow: 0 0 2px #ff4500, 0 0 8px #000;
+  /* text-shadow: 0 0 2px #ff4500, 0 0 8px #000; */
 }
 
 .section1 .evenement{
@@ -261,7 +261,9 @@
 
   .section1 .subtitle{
     font-size: 1.4em;
-    padding: 2.8em 0em 0em .5em;
+    padding: 3em 0em 0em .5em;
+    color: #ffffff;
+    text-shadow: 0 0 2px #ff4500, 0 0 6px #000;
   }
 
   .section1 .evenement{
@@ -311,7 +313,9 @@
 
   .section1 .subtitle{
     font-size: 1.5em;
-    padding: 3.4em 0em 0em 1em;
+    padding: 3.8em 0em 0em 1em;
+    color: #ffffff;
+    text-shadow: 0 0 2px #ff4500, 0 0 6px #000;
   }
 
   .section1 .evenement{
