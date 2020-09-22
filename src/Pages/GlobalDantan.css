@@ -90,18 +90,49 @@
   color: #FFFACD;
 }
 
-.submenu .signature{
+.submenu .dropdown{
+  position: relative;
+  display: inline-block;
+  background-color: #ff4500;
+  width: 200px;
+}
+
+.submenu .dropdown .catalogue{
   display: block;
-  width: 35%;
+  width: 50%;
   text-align: center;
   font-family: 'Cookie', cursive;
   font-weight: lighter;
 }
 
+.submenu .dropdown .catalogue ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  top:45px;
+  right: 0px;
+  width: 200px;
+  background-color: #FFFACD;
+  font-weight: 300;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,.3);
+  z-index: 2;
+}
+
+.submenu .dropdown .catalogue li{
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.submenu .dropdown .catalogue li:last-child{
+  border-bottom: none;
+}
+
+
 .submenu nav{
   display: flex;
   align-items: center;
-  width: 65%;
+  width: 45%;
   text-transform: uppercase;
   padding-left: 3em;
 }
