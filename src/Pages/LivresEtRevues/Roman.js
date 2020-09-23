@@ -51,3 +51,35 @@ const Roman = () => {
 }
 
 export default Roman
+
+/*
+  const [conte, setConte] = useState([])
+  const [roman, setRoman] = useState([])
+
+    const handleDisplayCatalogue = (e) => {
+    e.preventDefault()
+    const catalogue = setCatalogue(true)
+  }
+
+  const showAllConte = useCallback(() => {
+    axios.get(`${displayCatalogue}/${conte}`)
+      .then((res) => {
+        setConte(res.data)
+      })
+  }, [])
+
+  useEffect(() => {
+    showAllConte()
+  }, [])
+
+  const showAllRoman = useCallback(() => {
+    axios.get(`${displayCatalogue}/${roman}`)
+      .then((res) => {
+        setRoman(res.data)
+      })
+  }, [])
+
+  useEffect(() => {
+    showAllRoman()
+  }, [])
+*/

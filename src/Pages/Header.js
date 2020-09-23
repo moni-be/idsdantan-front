@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import CatalogueMenu from './Home/CatalogueMenu'
-import './GlobalDantan.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenSquare, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+
+import './GlobalDantan.css'
 
 const Header = () => {
   return (
@@ -28,7 +29,7 @@ const Header = () => {
       </div>
       <div className='submenu'>
         {/*  <h3 className='signature'>Notre catalogue</h3> */}
-        <CatalogueMenu />
+        <CatalogueMenu title='Cocuco' />
         <nav className='nav'>
           <ul>
             <li><Link to='/livre' className='links-nav'>livres </Link></li>

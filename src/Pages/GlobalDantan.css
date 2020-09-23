@@ -91,42 +91,59 @@
 }
 
 .submenu .dropdown{
-  position: relative;
-  display: inline-block;
-  background-color: #ff4500;
-  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  width: 50%;
+  padding: 0;
+  margin: 0;
 }
 
+.submenu .dropdown a{
+  color: #1C2833;
+}
 .submenu .dropdown .catalogue{
-  display: block;
-  width: 50%;
-  text-align: center;
+  position: absolute;
+  left: 2em;
+  font-size: 2em;
   font-family: 'Cookie', cursive;
   font-weight: lighter;
+  color: #ffffff;
 }
-
-.submenu .dropdown .catalogue ul{
+.submenu .dropdown ul{
+  width: 50%;
+  position: absolute;
   list-style-type: none;
+  width: 200px;
+  top:4em;
+  left: .5em;
   margin: 0;
   padding: 0;
-  top:45px;
-  right: 0px;
-  width: 200px;
-  background-color: #FFFACD;
-  font-weight: 300;
-  position: absolute;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,.3);
-  z-index: 2;
+  z-index: 3;
 }
 
-.submenu .dropdown .catalogue li{
-  padding: 8px 16px;
+.submenu .dropdown li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
   text-decoration: none;
+  color: #1C2833;
+  font-size: 1em;
+  font-weight: 500;
+  background-color:#ff4500;
 }
 
-.submenu .dropdown .catalogue li:last-child{
+.submenu .dropdown li:hover{
+  background-color: #FFFACD;
+  color: #1C2833;
+}
+
+.submenu .dropdown li:last-child{
   border-bottom: none;
 }
+
 
 
 .submenu nav{
