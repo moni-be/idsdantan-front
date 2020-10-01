@@ -7,18 +7,16 @@ import Footer from '../Footer'
 import '../GlobalDantan.css'
 import './Livre&Revue.css'
 
-import './../GlobalDantan.css'
-
 const Roman = () => {
-  const [roman, setRoman] = useState([])
+  const [book, setBook] = useState([])
 
   useEffect(() => {
-    showAllBooks()
+    showAllRoman()
   }, [])
 
-  const showAllBooks = () => {
-    axios.get(`http://localhost:4000/${roman}`)
-      .then(res => setRoman(res.data))
+  const showAllRoman = () => {
+    axios.get(`http://localhost:4000/roman/${book}`)
+      .then(res => setBook(res.data))
   }
 
   /*   const displayCatalogue = 'http://localhost:4000/roman'
@@ -40,8 +38,8 @@ const Roman = () => {
       <div className='container-livres'>
         <h1 className='title'>Livres</h1>
         <div className='container-vignettes'>
-          {roman.map((roman, key) => {
-            return <ModelBook isRoman={0} roman={roman} key={key} />
+          {book.map((roman, key) => {
+            return <ModelBook isBook={0} roman={roman} key={key} />
           })}
         </div>
       </div>

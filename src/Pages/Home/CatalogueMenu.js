@@ -3,42 +3,29 @@ import { Link } from 'react-router-dom'
 
 import './../GlobalDantan.css'
 
-function CatalogueMenu ({ title, items = [], multiSelect = false }) {
+const CatalogueMenu = (props, { title, items = [], multiSelect = false }) => {
+  const { book } = props
   const [open, setOpen] = useState(false)
-  const [selection, setSelection] = useState([])
   const toggle = () => setOpen(!open)
 
-  function handleOnClick(item){
+  // const [selection, setSelection] = useState([])
+  /*   function handleOnClick(item){
 
-  }
-
-  return (
-    <>
+  } */
+  if (props.book) {
+    return (
       <div className='dropdown'>
         <a href='#' onKeyPress={() => toggle(!open)} onClick={() => toggle(!open)}> <span className='catalogue'>Notre catalogue</span></a>
         {open && (
           <ul>
             <li><Link to='/livre/conte' className='links-nav'>Conte</Link></li>
-            <li><Link to='/roman' className='links-nav'>Roman</Link></li>
+            <li><Link to={`/roman/${book.category_id}`} className='links-nav'>Roman</Link></li>
 
           </ul>
         )}
       </div>
-    </>
-  )
+    )
+  }
 }
 
 export default CatalogueMenu
-
-{ /* <li>Lettre</li>
-    <li>Livre de référence</li>
-    <li>Essai</li>
-    <li>Nouvelle</li>
-    <li>Pièce de théâtre</li>
-    <li>Biographe</li>
-    <li>Art Poétique</li>
-    <li>La NRF</li>
-    <li>LTM</li>
-    <li>Scilicet</li>
-    <li>Critique</li>
-*/ }
