@@ -19,6 +19,15 @@ const Livre = () => {
       .then(res => setBook(res.data))
   }
 
+  /*   useEffect(() => {
+    showAllRoman()
+  }, [])
+
+  const showAllRoman = () => {
+    axios.get(`http://localhost:4000/livre/roman/${book}`)
+      .then(res => setBook(res.data))
+  } */
+
   return (
     <div className='container-global'>
       <Header />

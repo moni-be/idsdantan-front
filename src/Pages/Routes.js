@@ -8,7 +8,7 @@ import MentionsLegales from './PagesFooter/MentionsLegales'
 import NousJoindre from './PagesFooter/NousJoindre'
 import PageProdBook from './LivresEtRevues/PageProdBook'
 import PageProdRevue from './LivresEtRevues/PageProdRevue'
-import Roman from './LivresEtRevues/Roman'
+/* import Roman from './LivresEtRevues/Roman' */
 
 const routes = (props) => {
   return (
@@ -21,7 +21,7 @@ const routes = (props) => {
       <Route path='/nous-joindre' component={NousJoindre} />
       <Route path='/mon-livre/:bookId' component={PageProdBook} />
       <Route path='/ma-revue/:revueId' component={PageProdRevue} />
-      <Route path='livre/roman' component={Roman} />
+      {/* <Route path='/livre/roman' component={Livre} /> */}
     </Switch>
   )
 }

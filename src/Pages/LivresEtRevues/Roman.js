@@ -29,22 +29,26 @@ const Roman = () => {
   }, [])
 
   useEffect(() => {
-    showAllRoman()
+    showAllRoman()roman
+roman
   }, [showAllRoman]) */
 
   return (
-    <div className='container-global'>
-      <Header />
-      <div className='container-livres'>
-        <h1 className='title'>Livres</h1>
-        <div className='container-vignettes'>
-          {book.map((roman, key) => {
-            return <ModelBook isBook={0} roman={roman} key={key} />
-          })}
+    <>
+      <h1>Cocucucu</h1>
+      <div className='container-global'>
+        <Header />
+        <div className='container-livres'>
+          <h1 className='title'>Livres</h1>
+          <div className='container-vignettes'>
+            {book.map((book, key) => {
+              return <ModelBook isBook={0} book={book} key={key} />
+            })}
+          </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   )
 }
 
