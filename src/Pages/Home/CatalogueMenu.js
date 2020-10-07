@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import onClickOutside from 'react-onclickoutside'
 
 import './../GlobalDantan.css'
 
 function CatalogueMenu (props, { title, items = [], multiSelect = false }) {
+  // const { categoryId } = useParams()
   const [open, setOpen] = useState(false)
   const toggle = () => setOpen(!open)
   CatalogueMenu.handleClickOutside = () => setOpen(false)
@@ -18,9 +19,12 @@ function CatalogueMenu (props, { title, items = [], multiSelect = false }) {
       <a href='#' onKeyPress={() => toggle(!open)} onClick={() => toggle(!open)}> <span className='catalogue'>Notre catalogue</span></a>
       {open && (
         <ul>
-          <li><Link to='/livre/conte' className='links-nav'>Conte</Link></li>
-          <li><Link to='/livre/roman' className='links-nav'>Roman</Link></li>
-
+          <li>
+            <NavLink to='/livre/conte' className='links-nav'>Conte</NavLink>
+          </li>
+          <li>
+            <NavLink to='/livre/roman' className='links-nav'>Roman</NavLink>
+          </li>
         </ul>
       )}
     </div>
