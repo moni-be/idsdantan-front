@@ -9,10 +9,7 @@ import '../GlobalDantan.css'
 import './Livre&Revue.css'
 
 const Livre = () => {
-  // const { categoryId } = useParams()
   const [book, setBook] = useState([])
-  // const [category, setCategory] = useState([])
-  // const bookCategoryId = book.category_id
 
   useEffect(() => {
     showAllBooks()
@@ -23,14 +20,6 @@ const Livre = () => {
       .then(res => setBook(res.data))
   }
 
-  useEffect(() => {
-    showAllCategory()
-  }, [])
-
-  const showAllCategory = () => {
-    axios.get(`http://localhost:4000/livre/${book.category_id}/roman`)
-      .then(res => setBook(res.data))
-  }
   return (
     <div className='container-global'>
       <Header />
