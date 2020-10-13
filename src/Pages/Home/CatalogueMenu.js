@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import onClickOutside from 'react-onclickoutside'
 import axios from 'axios'
 import CategoryBook from './CategoryBook'
 
 import './../GlobalDantan.css'
-import { render } from '@testing-library/react'
 
 function CatalogueMenu (props) {
   const { categoryId } = useParams()
@@ -23,17 +22,22 @@ function CatalogueMenu (props) {
   }, [])
 
   const showAllCategory = () => {
-    axios.get(`http://localhost:4000/livre/categorie/${category}`)
+    axios.get(`http://localhost:4000/livre/categorie/${category.id}`)
       .then(res => setCategory(res.data))
   }
 
   return (
     <div className='dropdown'>
-      {category.map((category, key) => {
-        return <Link to={`/categorie-livre/${category}`} className='links-nav' key={key}>
-          <CategoryBook key={category.id} category={category} />
-        </Link>
-      })}
+      <a href='#' onKeyPress={() => toggle(!open)} onClick={() => toggle(!open)}> <span className='catalogue'>Notre catalogue</span></a>
+      {open && (
+        <ul>
+          {category.map((category, key) => {
+            return <li key={key}>
+              <span key={category.id} category={category}>{category.name}</span>
+            </li>
+          })}
+        </ul>
+      )}
 
       {/*
 
@@ -75,12 +79,10 @@ function CatalogueMenu (props) {
   )
 }
 
-export default CatalogueMenu
+/* export default CatalogueMenu */
 
-/*
 const clickOutsideConfig = {
   handleClickOutside: () => CatalogueMenu.handleClickOutside
 }
 
 export default onClickOutside(CatalogueMenu, clickOutsideConfig)
-*/

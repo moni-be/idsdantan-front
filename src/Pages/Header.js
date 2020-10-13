@@ -29,7 +29,7 @@ const Header = () => {
       </div>
       <div className='submenu'>
         {/*  <h3 className='signature'>Notre catalogue</h3> */}
-        <CatalogueMenu title='Cocuco' />
+        <CatalogueMenu />
         <nav className='nav'>
           <ul>
             <li><Link to='/livre' className='links-nav'>livres </Link></li>
