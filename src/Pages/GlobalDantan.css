@@ -294,13 +294,7 @@
   .submenu{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding-top: 1.5em;
-  }
-  .submenu .signature{
-    position: absolute;
-    font-size: 1.2em;
-    color: #1C2833;;
+    top: 50px;
   }
 
   .submenu .catalogue-tag{
@@ -308,19 +302,17 @@
   }
 
   .submenu .nav{
-    position: absolute;
-    top: 1em;
-    right: 0;
     display: flex;
+    width: 65%;
     flex-direction: row;
   }
   .submenu .nav .links-nav{
     display: inline;
-    padding-left: .8em;
+    padding-left: .5em;
     font-weight: 700;
     font-size: 1em;
   }
-
+  /* 
   .section1 .subtitle{
     font-size: 1.4em;
     padding: 3em 0em 0em .5em;
@@ -330,19 +322,17 @@
 
   .section1 .evenement{
     display: none;
-  }
+  }   */
+  
   .footer{
-    position: absolute;
-    bottom: 0;
-    background-color: #ffffff;
     font-size: 1em;
+    padding: 3rem 0;
   }
 
   .footer ul li{
     font-size: .7em;
   }
-  
-  
+
 }
 
 @media screen and (min-width: 640px) and (max-width: 1200px) {
@@ -361,7 +351,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 1.5em;
+    top:80px
   }
 
   .submenu .signature{
@@ -390,9 +380,6 @@
   }
 
   .footer{
-    position: absolute;
-    bottom: 0;
-    padding:.5em 0em;
     font-size: 1em;
   }
 
