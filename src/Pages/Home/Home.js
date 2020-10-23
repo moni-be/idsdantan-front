@@ -8,6 +8,7 @@ const Home = () => {
     <div className='container-global'>
       <Header />
       <Banner />
+      {/* <div className='test'><p>TEST</p></div> */}
       <Footer />
     </div>
 

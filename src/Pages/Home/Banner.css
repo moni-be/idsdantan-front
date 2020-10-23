@@ -1,9 +1,7 @@
 .banner{
-  width: 100vw;
+  width: 100%;
   margin: auto;
-  height: auto;
-  position: absolute;
-  top: 24vh;
+  margin-top: 100px;
   text-align: center;
   display: flex;
   justify-content: start;

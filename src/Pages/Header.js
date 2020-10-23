@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import CatalogueMenu from './Home/CatalogueMenu'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenSquare, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
@@ -28,8 +27,8 @@ const Header = () => {
         </nav>
       </div>
       <div className='submenu'>
-        {/*  <h3 className='signature'>Notre catalogue</h3> */}
-        <CatalogueMenu />
+        <a href='#'><h3 className='catalogue-tag'>Notre catalogue</h3></a>
+        {/* <CatalogueMenu /> */}
         <nav className='nav'>
           <ul>
             <li><Link to='/livre' className='links-nav'>livres </Link></li>

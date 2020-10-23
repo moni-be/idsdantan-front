@@ -5,6 +5,7 @@ import './Livre&Revue.css'
 
 const ModelBook = (props) => {
   const { book } = props
+
   if (props.book) {
     return (
       <>

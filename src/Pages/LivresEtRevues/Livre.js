@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-// import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import ModelBook from './ModelBook.js'
 import Header from '../Header'
@@ -24,7 +23,7 @@ const Livre = () => {
     <div className='container-global'>
       <Header />
       <div className='container-livres'>
-        <h1 className='title'>Livres</h1>
+        {/* <h1 className='title'>Livres</h1> */}
         <div className='container-vignettes'>
           {book.map((book, key) => {
             return <ModelBook isBook={0} book={book} key={key} />

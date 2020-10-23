@@ -1,22 +1,24 @@
 .container-global{
+  width: 100%;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100vh;
-  background-color: #FFFACD;
+  background-color: #ffffff;
 }
-
+.test{
+  height: 1500px;
+  background-color: green;
+  color: white;
+}
 .header{
   width: 100%;
-  position: fixed;
-  top: 0;
   z-index: 2;
   display: flex;
   align-items: center;
-  height: 12vh;
+  height: 12%;
   flex-direction: row;
   background-color:#1C2833;
   color: #FFFACD;
+  padding: 1rem 0;
 }
 
 .header .logo{
@@ -70,7 +72,7 @@
 }
 
 .header .nav ul li a{
-  color: #FFFACD;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -86,8 +88,18 @@
   padding-top: 1em;
   z-index: 1;
   padding-bottom: 1em;
-  background-color:#ff4500;
-  color: #FFFACD;
+  color: #1c2833;
+  justify-content: space-between;
+}
+
+.submenu .catalogue-tag{
+  font-size: 1.2em;
+  margin-left: 1rem;
+  color: #1C2833;
+}
+
+.submenu .catalogue-tag:hover{
+  text-decoration: underline;
 }
 
 .submenu .dropdown{
@@ -120,7 +132,6 @@
   margin: 0;
   padding: 0;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,.3);
-  z-index: 3;
 }
 
 .submenu .dropdown li{
@@ -149,7 +160,7 @@
 .submenu nav{
   display: flex;
   align-items: center;
-  width: 45%;
+  width: 65%;
   text-transform: uppercase;
   padding-left: 3em;
 }
@@ -169,7 +180,7 @@
 }
 
 .submenu nav ul li a{
-  color: #FFFACD;
+  color: #1c2833;
   text-decoration: none;
 }
 
@@ -182,41 +193,40 @@
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  height: 80vh;
 }
 
 .section1 .subtitle{
+  position: absolute;
+  top:200px;
+  left: 50px;
   font-family: 'Cookie', cursive;
-  font-size: 2.6em;
+  font-size: 2em;
   font-weight: lighter;
-  padding: 2.8em 0em 0em 1em;
   color: #ffffff;
   transform: rotate(-8deg);
-  z-index: 2;
+  z-index: 1;
   text-align: center;
   line-height: .8;
-  /* text-shadow: 0 0 2px #ff4500, 0 0 8px #000; */
+  text-shadow: 0 0 2px #ff4500, 0 0 8px #000;
 }
 
 .section1 .evenement{
   z-index: 1;
   font-size: 2em;
-  padding: 1.5em 0em 0em 2em;
+  position: absolute;
+  top:300px;
+  left: 50px;
   color: #ffffff;
   text-shadow: 0 0 1px #ff4500, 0 0 5px #000;
 }
 
 .footer{
-  position: fixed;
-  bottom: 0;
-  display: flex;
-  align-items: center;
   width: 100%;
-  height: 8vh;
-  background-color:rgba(255,255,255,.6);
+  align-items: center;
+  background-color:#ffffff;
   text-align: center;
-  padding-bottom: 1em;
-  border-top: solid .5px #1C2833;
+  padding: 5rem 0;
+  color: rgba(28,40,51,0.7);
 }
 
 .footer ul{
@@ -230,7 +240,7 @@
 
 .footer ul li a{
   text-decoration: none;
-  color: #070B18;
+  color: rgba(28,40,51,0.7);
   font-size: 1em;
 }
 
@@ -293,6 +303,10 @@
     color: #1C2833;;
   }
 
+  .submenu .catalogue-tag{
+    visibility: hidden;
+  }
+
   .submenu .nav{
     position: absolute;
     top: 1em;
@@ -318,7 +332,7 @@
     display: none;
   }
   .footer{
-    position: fixed;
+    position: absolute;
     bottom: 0;
     background-color: #ffffff;
     font-size: 1em;
@@ -351,7 +365,11 @@
   }
 
   .submenu .signature{
-    font-size: 1.6em;
+    font-size: 1.8em;
+  }
+
+  .submenu .catalogue-tag{
+    font-size: 1em;
   }
 
   .submenu .nav .links-nav{
@@ -372,7 +390,7 @@
   }
 
   .footer{
-    position: fixed;
+    position: absolute;
     bottom: 0;
     padding:.5em 0em;
     font-size: 1em;
