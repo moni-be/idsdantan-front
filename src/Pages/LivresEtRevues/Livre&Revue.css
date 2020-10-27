@@ -31,6 +31,7 @@
 }
 
 .container-livres .container-vignettes .vignette{
+  position: relative;
   width: auto;
   display: inline-block;
   background-color: transparent;
@@ -39,12 +40,24 @@
 
 /* .container-livres .container-vignettes .vignette{
   box-shadow: .5px .5px 5px rgba(7,11,24,.3)
-} */
-
+  overflow: hidden;
+}
+*/
 .container-livres .container-vignettes .vignette:hover{
-  box-shadow: 0px 0px 10px 1px rgba(7,11,24,.2)
+  box-shadow: 0px 0px 10px 1px rgba(7,11,24,.2);
 }
 
+.container-livres .container-vignettes .vignette .overlay{
+  display: block;
+  margin: auto;
+  width: 260px;
+  height: 400px;
+
+}
+.container-livres .container-vignettes .vignette .overlay:hover{
+  background-color:rgba(28,40,51,.3) ;
+}
+ 
 .container-livres .container-vignettes .vignette .photo{
   display: block;
   margin: auto;
@@ -52,26 +65,33 @@
   height: 400px;
 }
 
+.container-livres .container-vignettes .vignette .photo:hover{
+  opacity: 50%;
+}
+
 .container-livres .container-vignettes .vignette .texte {
   display: block;
   width: 75%;
   margin: auto;
 }
+
+
 .container-livres .container-vignettes .vignette .texte h3{
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 400;
-  margin-bottom: .3em;
+  margin-bottom: .5em;
+  margin-top: -1em;
   font-style: italic;
 }
 
 .container-livres .container-vignettes .vignette .texte h4{
   font-size: .8em;
   font-weight: 400;
-  padding-bottom: 1em;
+  padding-bottom: .5em;
 }
 
 .container-livres .container-vignettes .vignette .texte h5{
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 600;
   padding-bottom: 1em;
 }
