@@ -4,11 +4,7 @@
   flex-direction: column;
   background-color: #ffffff;
 }
-.test{
-  height: 1500px;
-  background-color: green;
-  color: white;
-}
+
 .header{
   width: 100%;
   z-index: 2;

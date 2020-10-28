@@ -36,28 +36,17 @@
   display: inline-block;
   background-color: transparent;
   margin: .5em;
-}
-
-/* .container-livres .container-vignettes .vignette{
-  box-shadow: .5px .5px 5px rgba(7,11,24,.3)
-  overflow: hidden;
-}
-*/
-.container-livres .container-vignettes .vignette:hover{
   box-shadow: 0px 0px 10px 1px rgba(7,11,24,.2);
+  border-top-left-radius: 30px 30px;
+  border-top-right-radius: 30px 30px;
 }
 
-.container-livres .container-vignettes .vignette .overlay{
-  display: block;
-  margin: auto;
-  width: 260px;
-  height: 400px;
+/* .container-livres .container-vignettes .vignette:hover{
+  box-shadow: 0px 0px 10px 1px rgba(7,11,24,.2);
+  border-bottom-left-radius: 50px 50px;
+  border-top-right-radius: 50px 50px;
+} */
 
-}
-.container-livres .container-vignettes .vignette .overlay:hover{
-  background-color:rgba(28,40,51,.3) ;
-}
- 
 .container-livres .container-vignettes .vignette .photo{
   display: block;
   margin: auto;
@@ -65,16 +54,48 @@
   height: 400px;
 }
 
-.container-livres .container-vignettes .vignette .photo:hover{
-  opacity: 50%;
-}
-
 .container-livres .container-vignettes .vignette .texte {
   display: block;
-  width: 75%;
+  width: 90%;
   margin: auto;
+  color: rgba(7,11,24,.5);
 }
 
+.container-livres .container-vignettes .vignette .texte:hover {
+  color: rgba(7,11,24,1);
+}
+
+
+.container-livres .container-vignettes .vignette .texte .icon-buy{
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+  transition: all 0.3s ease-out;
+  transform: translateX(0%) scale(0.5,0.5);
+  color: rgba(204, 0, 0, 0.8);
+  font-size: 50px;
+}
+
+.container-livres .container-vignettes .vignette .texte:hover .icon-buy{
+  transform: translateX(-110%) scale(2.6, 1) ;
+  color: #cc0000;
+}
+
+.container-livres .container-vignettes .vignette .texte .icon-txt {
+  position: absolute;
+  right:25px;
+  transition: all 0.3s ease-out;
+  transform: translateY(0%);
+  color: #ffffff;
+  font-size: 1em
+}
+
+.container-livres .container-vignettes .vignette .texte:hover .icon-txt{
+  transform: translateY(-280%);
+  font-size: .8em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
 .container-livres .container-vignettes .vignette .texte h3{
   font-size: 1em;
@@ -82,6 +103,7 @@
   margin-bottom: .5em;
   margin-top: -1em;
   font-style: italic;
+  height: 2em;
 }
 
 .container-livres .container-vignettes .vignette .texte h4{
