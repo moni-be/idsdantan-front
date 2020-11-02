@@ -8,6 +8,10 @@ import './Livre&Revue.css'
 const ModelBook = (props) => {
   const { book } = props
 
+const handleChange = () => {
+  alert('Hello')
+}
+
   if (props.book) {
     return (
       <>
@@ -20,8 +24,10 @@ const ModelBook = (props) => {
             <h4>{book.author}</h4>
             <h5>Prix : {book.price}&euro;</h5>
             {/* <p className='description'>{book.description}</p> */}
-            <FontAwesomeIcon icon={faBookmark} className='icon-buy' />
-            <span className='icon-txt'>Je reserve</span>
+            <Link to={`/mon-livre/${book.id}`}>
+              <FontAwesomeIcon icon={faBookmark} className='icon-buy' onClick={handleChange} />
+              <span className='icon-txt' onClick={handleChange}>Je réserve</span>
+            </Link>
           </figcaption>
         </figure>
       </>

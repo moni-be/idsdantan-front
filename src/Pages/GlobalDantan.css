@@ -155,10 +155,11 @@
 
 .submenu nav{
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   width: 65%;
   text-transform: uppercase;
-  padding-left: 3em;
+  padding-left: 1em;
 }
 
 .submenu nav ul{
@@ -298,13 +299,11 @@
   }
 
   .submenu .nav{
-    display: flex;
-    width: 65%;
-    flex-direction: row;
+    width: 100%;
   }
+
   .submenu .nav .links-nav{
     display: inline;
-    padding-left: .5em;
     font-weight: 700;
     font-size: 1em;
   }
@@ -332,10 +331,7 @@
 }
 
 @media screen and (min-width: 640px) and (max-width: 1200px) {
-  .header{
-    height: 16vh;
-  }
-  
+ 
   .header .nav .links-nav .icon{
     font-size: 1.3em;
   }
