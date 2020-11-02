@@ -85,13 +85,13 @@
   transition: all 0.3s ease-out;
   transform: translateY(0%);
   color: #ffffff;
-  font-size: 1em;
+  font-size: .2em;
   cursor: pointer;
 }
 
 .container-livres .container-vignettes .vignette .texte:hover .icon-txt{
   transform: translateY(-280%);
-  font-size: .8em;
+  font-size: 1em;
   font-weight: 700;
   text-transform: uppercase;
 }

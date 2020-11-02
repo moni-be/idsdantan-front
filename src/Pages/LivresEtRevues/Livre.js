@@ -3,11 +3,12 @@ import axios from 'axios'
 import ModelBook from './ModelBook.js'
 import Header from '../Header'
 import Footer from '../Footer'
+import MenuButtons from './MenuButtons'
 
 import '../GlobalDantan.css'
 import './Livre&Revue.css'
 
-const Livre = () => {
+const Livre = (props) => {
   const [book, setBook] = useState([])
 
   useEffect(() => {
@@ -22,6 +23,7 @@ const Livre = () => {
   return (
     <div className='container-global'>
       <Header />
+      <MenuButtons />
       <div className='container-livres'>
         {/* <h1 className='title'>Livres</h1> */}
         <div className='container-vignettes'>

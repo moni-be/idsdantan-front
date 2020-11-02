@@ -1,0 +1,26 @@
+.container-buttons{
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.container-buttons .menu-buttons{
+  width: 150px;
+  padding: 10px 5px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  background-color: #ffffff;
+  border: solid 1px #1C2833;
+  color: #1C2833;
+  border-radius: 15px;
+}
+
+.container-buttons .menu-buttons:hover{
+  background-color: #1C2833;
+  border: none;
+  color: #ffffff;
+}

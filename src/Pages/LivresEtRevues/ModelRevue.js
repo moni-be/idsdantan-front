@@ -23,8 +23,10 @@ const ModelRevue = (props) => {
             <h3>{revue.title} </h3>
             <h4>Numéro : {revue.number}</h4>
             <h5>Prix : {revue.price}&euro;</h5>
-            <FontAwesomeIcon icon={faBookmark} className='icon-buy' />
-            <span className='icon-txt' onClick={handleChange}>Je réserve</span>
+            <Link to={`/ma-revue/${revue.id}`}>
+              <FontAwesomeIcon icon={faBookmark} className='icon-buy' />
+              <span className='icon-txt' onClick={handleChange}>Je réserve</span>
+            </Link>
           </figcaption>
         </figure>
       </>
