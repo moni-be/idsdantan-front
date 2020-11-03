@@ -1,11 +1,36 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
-import './MenuButtons.css'
+import './MenuButton.css'
 
-function MenuButtons () {
+function MenuButton () {
   const [category, setCategory] = useState([])
-  const [bookCategory, setBookCategory] = useState([])
+
+  useEffect(() => {
+    showAllCategory()
+  }, [])
+
+  const showAllCategory = () => {
+    axios.get(`http://localhost:4000/livre/categorie/${category.id}`)
+      .then(res => setCategory(res.data))
+  }
+  return (
+    <div className='container-buttons'>
+      {category.map((category, key) => {
+        return (
+          <button className='menu-buttons' key={key}>
+            {category.name}
+          </button>
+        )
+      })}
+    </div>
+  )
+}
+
+export default MenuButton
+/*
+const [category, setCategory] = useState([])
+const [bookCategory, setBookCategory] = useState([])
   const [book, setBook] = useState([])
 
   useEffect(() => {
@@ -24,7 +49,7 @@ function MenuButtons () {
     }
   }
 
-  useEffect(() => {
+    useEffect(() => {
     showAllCategory()
   }, [])
 
@@ -44,5 +69,4 @@ function MenuButtons () {
     </div>
   )
 }
-
-export default MenuButtons
+*/

@@ -19,7 +19,7 @@ const routes = (props) => {
       <Route path='/nous-joindre' component={NousJoindre} />
       <Route path='/mon-livre/:bookId' component={PageProdBook} />
       <Route path='/ma-revue/:revueId' component={PageProdRevue} />
-      <Route path='/livre/:categoryId/roman' component={Livre} />
+      <Route path='/livre/categorie/:categoryId' component={Livre} />
     </Switch>
   )
 }
