@@ -26,7 +26,7 @@ const Livre = () => {
 
   const showAllBooks = () => {
     axios.get(`http://localhost:4000/livre/${book}`)
-      .then(res => setBook(res.data), console.log(res => setBookCategory(res.data)))
+      .then(res => setBook(res.data), res => setBookCategory(res.data))
   }
 
   /*  const showBookCategory = () => {
@@ -48,12 +48,15 @@ const Livre = () => {
     })
   }
 
+  const sample = () => {
+    alert('coucou')
+  }
   return (
     <div className='container-global'>
       <Header />
       <div className='container-livres'>
         {/* <h1 className='title'>Livres</h1> */}
-        <MenuButton onClick={getByCategory} />
+        <MenuButton onClick={sample} />
 
         <div className='container-vignettes'>
           {book.map((book, key) => {
