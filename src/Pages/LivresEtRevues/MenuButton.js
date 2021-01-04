@@ -18,7 +18,7 @@ function MenuButton () {
     <div className='container-buttons'>
       {category.map((category, key) => {
         return (
-          <button type='button' className='menu-buttons' key={key}>
+          <button type='button' value={category.name} className='menu-buttons' key={key}>
             {category.name}
           </button>
         )

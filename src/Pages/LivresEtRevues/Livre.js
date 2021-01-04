@@ -19,10 +19,10 @@ const Livre = () => {
     showAllBooks()
   }, [])
 
-  /*  useEffect(() => {
-    showBookCategory()
+  useEffect(() => {
+    setBookCategory()
   },
-  [bookCategory]) */
+  [])
 
   const showAllBooks = () => {
     axios.get(`http://localhost:4000/livre/${book}`)
@@ -36,16 +36,18 @@ const Livre = () => {
       )
   } */
 
-  const getByCategory = () => {
+  const getByCategory = (e) => {
     bookCategory({ category: !setCategory }, () => {
-      let bookTemp
+      let bookTemp = e.target.value
       if (category) {
-        bookTemp = book.filter(book => book.category_id)
+        bookTemp = setBook
+        console.log(bookTemp)
       } else {
-        bookTemp = setBookCategory
+        bookTemp = book.filter(book => {
+          return book.category_name.indexOf(e.target.value) >= 0
+        })
       }
       bookCategory({ setBookCategory: bookTemp })
-      console.log(bookTemp)
     })
   }
 
@@ -63,6 +65,7 @@ const Livre = () => {
           {book.map((book, key) => {
             return <ModelBook isBook={0} book={book} key={key} />
           })}
+
         </div>
       </div>
       <Footer />
