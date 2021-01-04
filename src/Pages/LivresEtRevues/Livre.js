@@ -42,21 +42,22 @@ const Livre = () => {
       if (category) {
         bookTemp = book.filter(book => book.category_id)
       } else {
-        bookTemp = setBook
+        bookTemp = setBookCategory
       }
       bookCategory({ setBookCategory: bookTemp })
+      console.log(bookTemp)
     })
   }
 
-  const sample = () => {
-    alert('coucou')
-  }
+  /*   const sample = () => {
+    alert('Ajouter à mon panier')
+  } */
   return (
     <div className='container-global'>
       <Header />
       <div className='container-livres'>
         {/* <h1 className='title'>Livres</h1> */}
-        <MenuButton onClick={sample} />
+        <MenuButton onClick={getByCategory} />
 
         <div className='container-vignettes'>
           {book.map((book, key) => {

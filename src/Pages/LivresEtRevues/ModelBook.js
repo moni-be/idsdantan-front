@@ -8,9 +8,9 @@ import './Livre&Revue.css'
 const ModelBook = (props) => {
   const { book } = props
 
-const handleChange = () => {
-  alert('Hello')
-}
+  const handleChange = () => {
+    alert('Ajouter à mon panier')
+  }
 
   if (props.book) {
     return (
