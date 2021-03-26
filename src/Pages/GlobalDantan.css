@@ -195,36 +195,36 @@
 
 .section1 .subtitle{
   position: absolute;
-  top:200px;
+  top:150px;
   left: 50px;
   font-family: 'Cookie', cursive;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: lighter;
   color: #ffffff;
   transform: rotate(-8deg);
   z-index: 1;
   text-align: center;
   line-height: .8;
-  text-shadow: 0 0 2px #ff4500, 0 0 8px #000;
+  text-shadow: 0 0 2px #6a7987, 0 0 8px #1c2833;
 }
 
 .section1 .evenement{
   z-index: 1;
-  font-size: 2em;
+  font-size: 3em;
   position: absolute;
   top:300px;
   left: 50px;
   color: #ffffff;
-  text-shadow: 0 0 1px #ff4500, 0 0 5px #000;
+  text-shadow: 0 0 1px #6a7987, 0 0 5px #1c2833;
 }
 
 .footer{
   width: 100%;
   align-items: center;
-  background-color:#ffffff;
+  background-color:#6a7987;
   text-align: center;
   padding: 5rem 0;
-  color: rgba(28,40,51,0.7);
+  color: #ffffff;
 }
 
 .footer ul{
@@ -238,7 +238,7 @@
 
 .footer ul li a{
   text-decoration: none;
-  color: rgba(28,40,51,0.7);
+  color: #ffffff;
   font-size: 1em;
 }
 
@@ -295,10 +295,10 @@
   }
 
   .submenu .catalogue-tag{
-    font-size:16px;
+    font-size:14px;
     width: 45%;
     text-align: left;
-    padding-left: 8px;
+    padding-left: 16px;
   }
 
   .submenu .nav{
@@ -314,17 +314,16 @@
   .submenu .nav li:nth-child(2){
     padding-left: 16px;
   }
-  /* 
+
   .section1 .subtitle{
-    font-size: 1.4em;
-    padding: 3em 0em 0em .5em;
-    color: #ffffff;
-    text-shadow: 0 0 2px #ff4500, 0 0 6px #000;
+    top:150px;
+    font-size: 24px;
+    left: 20px;
   }
 
   .section1 .evenement{
     display: none;
-  }   */
+  }
   
   .footer{
     font-size: 1em;
@@ -350,7 +349,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    top: 70px;
+    margin-top: 16px;
+    padding: 16px 0px;
   }
 
   .submenu .signature{
@@ -359,19 +359,13 @@
 
   .submenu .nav .links-nav{
     font-size: 1em;
-    top: 1em;
   }
+
 
   .section1 .subtitle{
-    font-size: 1.5em;
-    padding: 3.8em 0em 0em 1em;
-    color: #ffffff;
-    text-shadow: 0 0 2px #ff4500, 0 0 6px #000;
-  }
-
-  .section1 .evenement{
-    font-size: 1em;
-    padding: 1.5em 0em 0em 2em;
+    top:150px;
+    left: 20px;
+    font-size: 2em;
   }
 
   .footer{
