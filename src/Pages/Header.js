@@ -27,7 +27,9 @@ const Header = () => {
         </nav>
       </div>
       <div className='submenu'>
-        <a href='#'><h3 className='catalogue-tag'>Notre catalogue</h3></a>
+        <a href='#' className='catalogue-tag'>
+          <span> Notre catalogue</span>
+        </a>
         {/* <CatalogueMenu /> */}
         <nav className='nav'>
           <ul>
