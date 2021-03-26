@@ -4,7 +4,6 @@ import axios from 'axios'
 import ModelBook from './ModelBook.js'
 import Header from '../Header'
 import Footer from '../Footer'
-import MenuButton from './MenuButton'
 
 import '../GlobalDantan.css'
 import './Livre&Revue.css'
@@ -58,8 +57,8 @@ const Livre = () => {
     <div className='container-global'>
       <Header />
       <div className='container-livres'>
-        {/* <h1 className='title'>Livres</h1> */}
-        <MenuButton onClick={getByCategory} />
+        {/* <h1 className='title'>Livres</h1>
+        <MenuButton onClick={getByCategory} /> */}
 
         <div className='container-vignettes'>
           {book.map((book, key) => {
