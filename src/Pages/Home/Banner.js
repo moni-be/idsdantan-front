@@ -8,13 +8,15 @@ import './Banner.css'
 const Banner = () => {
   return (
     <div className='container-global'>
-      <section className='section1'>
-        <h2 className='subtitle'>Les évènements <br />des livres !</h2>
-        <h2 className='evenement'>La Nuit du Livre</h2>
-        <div className='banner'>
-          <Video />
-        </div>
-      </section>
+      <div className='section-backgroud'>
+        <section className='section1'>
+          <h2 className='subtitle'>Les évènements <br />des livres !</h2>
+          <h2 className='evenement'>La Nuit du Livre</h2>
+          <div className='banner'>
+            <Video />
+          </div>
+        </section>
+      </div>
     </div>
 
   )

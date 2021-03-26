@@ -58,9 +58,9 @@ const Livre = () => {
     <div className='container-global'>
       <Header />
       <div className='container-livres'>
-        {/* <h1 className='title'>Livres</h1> */}
+        {/* <h1 className='title'>Livres</h1> 
         <MenuButton onClick={getByCategory} />
-
+        */}
         <div className='container-vignettes'>
           {book.map((book, key) => {
             return <ModelBook isBook={0} book={book} key={key} />

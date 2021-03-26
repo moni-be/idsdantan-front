@@ -10,7 +10,10 @@ h2,h3{font-weight: 600;font-size: 2em;}
 body{font-family: 'Montserrat', sans-serif; 
   font-weight: 400;
   font-size: 16px;
-  color: #070B18;}
+  color: #070B18;
+  background-color: #ffffff;
+}
+
 
 Link{text-decoration: none;}
 

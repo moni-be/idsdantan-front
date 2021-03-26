@@ -1,7 +1,8 @@
 .container-global{
   width: 100%;
   display: flex;
-  flex-direction: column;background-color: #664C58;;
+  flex-direction: column;
+  background-color: #ffffff;
 }
 
 .header{
@@ -185,6 +186,10 @@
   text-decoration: underline;
 }
 
+.container-global .section-backgroud{
+   background-color: #8eafce;
+   width: 100%;
+}
 .section1{
   display: flex;
   flex-direction: column;
