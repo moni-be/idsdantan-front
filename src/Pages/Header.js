@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenSquare, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import CatalogueMenu from './Home/CatalogueMenu'
 
 import './GlobalDantan.css'
 
@@ -27,10 +28,9 @@ const Header = () => {
         </nav>
       </div>
       <div className='submenu'>
-        <a href='#' className='catalogue-tag'>
-          <span> Notre catalogue</span>
-        </a>
-        {/* <CatalogueMenu /> */}
+        {/* <a href='#' className='catalogue-tag'>
+         <span> Notre catalogue</span></a> */}
+        <CatalogueMenu />
         <nav className='nav'>
           <ul>
             <li><Link to='/livre' className='links-nav'>livres </Link></li>

@@ -7,7 +7,6 @@
 
 .header{
   width: 100%;
-  z-index: 2;
   display: flex;
   align-items: center;
   height: 12%;
@@ -81,7 +80,7 @@
   display: flex;
   flex-direction: row;
   padding: 1em 0;
-  z-index: 1;
+  z-index: 3;
   color: #8eafce;
   justify-content: space-between;
   background-color: #37202b;
@@ -110,24 +109,21 @@
   margin: 0;
 }
 
-.submenu .dropdown a{
-  color: #1C2833;
-}
 .submenu .dropdown .catalogue{
   position: absolute;
-  left: 2em;
-  font-size: 2em;
+  left: 4em;
+  bottom: 10px;
+  font-size: 2.5em;
   font-family: 'Cookie', cursive;
   font-weight: lighter;
-  color: #ffffff;
+  color: #8eafce;
 }
 .submenu .dropdown ul{
-  width: 50%;
+  width: 180px;
   position: absolute;
   list-style-type: none;
-  width: 200px;
-  top:4em;
-  left: .5em;
+  top: 3em;
+  left: 7em;
   margin: 0;
   padding: 0;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,.3);
@@ -137,17 +133,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 3rem;
+  line-height: 2.5;
   text-decoration: none;
-  color: #1C2833;
-  font-size: 1em;
+  color: #664c58;
+  font-size: 16px;
   font-weight: 500;
-  background-color:#ff4500;
+  background-color:#ffffff;
+  border-bottom: dotted .5px #664c58;
+  z-index: 10;
+  cursor: pointer;
 }
 
 .submenu .dropdown li:hover{
-  background-color: #FFFACD;
-  color: #1C2833;
+  background-color: #8eafce;
+  color: #37202b;
 }
 
 .submenu .dropdown li:last-child{
@@ -201,7 +200,7 @@
 .section1 .subtitle{
   position: absolute;
   top:240px;
-  left: 120px;
+  left: 125px;
   font-family: 'Cookie', cursive;
   font-size: 3em;
   font-weight: lighter;
@@ -311,6 +310,24 @@
    justify-content: flex-end;
   }
 
+   .submenu .dropdown ul{
+    width: 150px;
+    top: 56px;
+    left: 8px;
+  }
+
+  .submenu .dropdown ul li{
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  .submenu .dropdown .catalogue{
+    position: absolute;
+    left: 16px;
+    bottom: 18px;
+    font-size: 28px;
+  }
+
   .submenu .nav .links-nav{
     font-weight: 700;
     font-size: 1em;
@@ -348,14 +365,6 @@
   }
   .header .nav .links-nav .icon-txt{
     font-size: .7em;
-  }
-  
-  .submenu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 5px;
-    padding: 16px 0px;
   }
 
   .submenu .signature{
