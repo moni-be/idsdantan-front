@@ -27,7 +27,7 @@
     "react-onclickoutside": "^6.9.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
-    "sockjs": "^0.3.19",
+    "sockjs": "^0.3.20",
     "ssri": "^8.0.1",
     "trim-newlines": "^4.0.2",
     "video-react": "^0.14.1",
