@@ -19,7 +19,7 @@
     "is-svg": "^4.3.1",
     "mem": "^8.1.1",
     "merge": "^2.1.1",
-    "node-notifier": "^5.4.5",
+    "node-notifier": "^8.0.1",
     "normalize-url": "^6.1.0",
     "react": "^16.13.1",
     "react-dev-utils": "^5.0.3",
