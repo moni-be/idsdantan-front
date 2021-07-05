@@ -22,7 +22,7 @@
     "node-notifier": "^8.0.1",
     "normalize-url": "^6.1.0",
     "react": "^16.13.1",
-    "react-dev-utils": "^11.0.4",
+    "react-dev-utils": "^5.0.3",
     "react-dom": "^16.13.1",
     "react-onclickoutside": "^6.9.0",
     "react-router-dom": "^5.2.0",
